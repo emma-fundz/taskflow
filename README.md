@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # # TaskFlow - Next-Gen To-Do List App
+=======
+# TaskFlow - Next-Gen To-Do List App
+>>>>>>> abd91b1 (first commit)
 
 A futuristic, beautifully designed to-do list web application with glassmorphism, glow effects, and smooth animations. Built with React, TypeScript, and Tailwind CSS.
 
@@ -165,3 +169,137 @@ interface Task {
 - Persist tasks to database
 - Sync across devices
 - Offline support with local storage
+<<<<<<< HEAD
+=======
+
+## 🛠️ Installation & Setup
+
+### Prerequisites
+- Node.js 18+ and npm
+- Git
+
+### Local Development
+
+```bash
+# Clone the repository
+git clone <repository-url>
+cd taskflow
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+The app will be available at `http://localhost:8080`
+
+## 🚀 Deployment
+
+### Recommended Platforms
+- **Vercel** (Recommended) - Zero config deployment
+- **Netlify** - Great for static sites
+- **Cloudflare Pages** - Fast global CDN
+
+### Deploy with Vercel
+
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+```
+
+### Environment Variables (When Adding Backend)
+
+```env
+VITE_API_URL=https://api.your-backend.com
+VITE_AUTH_DOMAIN=your-auth-domain
+```
+
+## 📱 Responsive Breakpoints
+
+- Mobile: < 768px
+- Tablet: 768px - 1024px
+- Desktop: > 1024px
+
+## 🎯 Future Enhancements
+
+### Phase 2 Features
+- [ ] User authentication system
+- [ ] Backend API integration
+- [ ] Task categories/tags
+- [ ] Due dates and reminders
+- [ ] Priority levels
+- [ ] Search and filters
+- [ ] Drag-and-drop reordering
+
+### Phase 3 Features
+- [ ] Team collaboration
+- [ ] Task assignments
+- [ ] Comments and attachments
+- [ ] Activity timeline
+- [ ] Mobile app (React Native)
+
+## 🧪 Testing
+
+```bash
+# Run type checking
+npm run type-check
+
+# Lint code
+npm run lint
+```
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 💡 Customization Guide
+
+### Change Color Scheme
+
+Edit `src/index.css`:
+```css
+:root {
+  --primary: 189 100% 55%;    /* Change to your color */
+  --secondary: 265 75% 60%;   /* Change to your color */
+}
+```
+
+### Modify Animations
+
+Edit animation duration in `tailwind.config.ts`:
+```typescript
+animation: {
+  "pulse-glow": "pulse-glow 2s ease-in-out infinite", // Adjust timing
+}
+```
+
+### Add New Task Fields
+
+1. Update `Task` interface in `TodoDashboard.tsx`
+2. Add form fields in `AddTaskDialog.tsx`
+3. Update `TaskItem.tsx` to display new fields
+
+
+---
+
+**Built by emma_fz using React, TypeScript, Tailwind CSS, and shadcn/ui**
+>>>>>>> abd91b1 (first commit)
